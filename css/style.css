@@ -1,0 +1,128 @@
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 100px; 
+}
+
+/* Call Info Styling */
+.call-info {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right; 
+}
+
+/* Main Navigation Styling */
+.main-nav {
+    background-color: #838282; /* Màu nền thanh điều hướng */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px 0;
+}
+
+.main-nav .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:flex-start; /* Căn giữa các mục trong thanh điều hướng */
+}
+
+.main-nav .nav-list li {
+    margin-left: 20px;
+}
+
+.main-nav .nav-list a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav .nav-list a:hover {
+    background-color: #ff9800;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.hotnews, .news {
+    flex: 1;
+    margin: 10px;
+}
+
+.news .item {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 14px;
+}
+
+/* Form */
+.frmcomment form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button, input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #ff5722;
+}
+
+/* Error messages */
+#errorMessages {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+}
